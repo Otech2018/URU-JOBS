@@ -17,11 +17,22 @@
 	 define('DB_PASS', 'ejykmgh@@101'); 
 	 define('DB_DATABASE', 'ejykmgh10_jbs');
  
+ 	//**new coonect by ben
+ 	
+ 	$username = "ejykmgh10_jbs";
+	$password = "ejykmgh@@101";
+	$host = 'mysql.vps44038.mylogin.co';
+	$db ='ejykmgh10_jbs';
+	$connect_ben = new PDO("mysql:host=$host;dbname=$db",$username,$password);
+	
+ 	//***ends her by ben
+ 
+ 	
 	/** 
 	* Show MySql Errors. 
 	* Not recomended for live site. true/false 
 	*/
-	 define('DEBUG', false);
+	 define('DEBUG', true);
  
 	/** 
 	* Cookie Constants - these are the parameters 

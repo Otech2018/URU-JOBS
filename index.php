@@ -1,8 +1,4 @@
 <?php
-  define("_VALID_PHP", true);
-  require_once("init.php");
-
-  $home = $content->getHomePage();
-  $news = $content->renderNews();
+header("location:../index.php");
+exit;
 ?>
-<?php require_once (THEMEDIR . "/index.tpl.php");?>
